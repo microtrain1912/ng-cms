@@ -37,18 +37,6 @@
   </div>
 
   <div>
-    <label for="published">Published</label>
-    <input [(ngModel)]="article.published" type="text" name="published" id="published">
-    <div *ngIf="errors.published">{{errors.published.message}}</div>
-  </div>
-
-  <div>
-    <label for="created">Created</label>
-    <input [(ngModel)]="article.created" type="text" name="created" id="created">
-    <div *ngIf="errors.created">{{errors.created.message}}</div>
-  </div>
-
-  <div>
     <label for="modified">Modified</label>
     <input [(ngModel)]="article.modified" type="text" name="modified" id="modified">
     <div *ngIf="errors.modified">{{errors.modified.message}}</div>

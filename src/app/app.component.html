@@ -1,10 +1,15 @@
-<nav>
+<!-- nav -->
+<!-- <nav *ngIf="currentUser"> -->
+<!-- <button [routerLink]="/">Home</button> -->
+<nav *ngIf="nav.visible">
+  <button [routerLink]="['/login']">Login</button>
+  <button [routerLink]="['/register']">Register</button>
   <button [routerLink]="['/users']">Users</button>
   <button [routerLink]="['/users/create']">New User</button>
   <button [routerLink]="['/articles']">Articles</button>
   <button [routerLink]="['/articles/create']">New Article</button>
-  <button [routerLink]="['/login']">Login</button>
-  <button [routerLink]="['/logout']">Logout</button>
+  <button [routerLink]="['/login']">Logout</button>
+  <!-- <button (click)="onLogout()">Logout</button> -->
 </nav>
 
 <router-outlet></router-outlet>

@@ -2,5 +2,6 @@
 <ul *ngIf="users">
   <li *ngFor="let user of users">
     <a [routerLink]="['/users/view/', user._id]">{{user.username}}</a>
+    <!-- - <a (click)="deleteUser(user._id)" class="text-danger">Delete</a> -->
   </li>
 </ul>
